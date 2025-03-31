@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="react1"/>
+        <attribute name="authors" value="abdeel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-31 11:41:14 a. m."/>
+        <attribute name="created" value="YWJkZWVsO0RFRVBUSE9VR0hUOzIwMjUtMDMtMzA7MDc6MjY6MzggcC4gbS47MjkxMQ=="/>
+        <attribute name="edited" value="YWJkZWVsO0RFRVBUSE9VR0hUOzIwMjUtMDMtMzE7MTE6NDE6MTQgYS4gbS47MTsyOTkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="inicialNombre" type="String" array="False" size=""/>
+            <declare name="sexo" type="String" array="False" size=""/>
+            <output expression="&quot;Ingrese su sexo (H: Hombre, M: Mujer)&quot;" newline="True"/>
+            <input variable="sexo"/>
+            <if expression="sexo == &quot;H&quot;">
+                <then>
+                    <output expression="&quot;Ingrese su inicial de nombre:&quot;" newline="True"/>
+                    <input variable="inicialNombre"/>
+                    <if expression="inicialNombre &gt;= &quot;N&quot;">
+                        <then>
+                            <output expression="&quot;Pertenece al grupo A&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Pertenece al grupo B&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else/>
+            </if>
+            <if expression="sexo == &quot;M&quot;">
+                <then>
+                    <output expression="&quot;Ingrese su inicial de nombre:&quot;" newline="True"/>
+                    <input variable="inicialNombre"/>
+                    <if expression="inicialNombre &lt;= &quot;M&quot;">
+                        <then>
+                            <output expression="&quot;Pertenece al grupo A&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Pertenece al grupo B&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
