@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="react2"/>
+        <attribute name="authors" value="abdeel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-03 11:24:25 p. m."/>
+        <attribute name="created" value="YWJkZWVsO0RFRVBUSE9VR0hUOzIwMjUtMDQtMDM7MTA6Mjg6NDQgcC4gbS47MjkwNQ=="/>
+        <attribute name="edited" value="YWJkZWVsO0RFRVBUSE9VR0hUOzIwMjUtMDQtMDM7MTE6MjQ6MjUgcC4gbS47MTszMDA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="opc" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;Que va a querer? 1. Pizza Vegetariana 2. Pizza No Vegetariana&quot;" newline="True"/>
+            <input variable="opc"/>
+            <if expression="opc == 1">
+                <then>
+                    <output expression="&quot;Escoge un ingrediente: 1. Pimiento 2. Tofu&quot;" newline="True"/>
+                    <input variable="opc"/>
+                    <if expression="opc == 1">
+                        <then>
+                            <output expression="&quot;Los ingredientes de tu pizza son Mozzarella, Tomate y Pimiento&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="opc == 2">
+                                <then>
+                                    <output expression="&quot;Los ingredientes de tu pizza son Mozzarella, Tomate y Tofu&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;No existe este ingrediente&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Escoge un ingrediente: 1. Peperoni 2. Jamon 3. Salmon&quot;" newline="True"/>
+                    <input variable="opc"/>
+                    <if expression="opc == 1">
+                        <then>
+                            <output expression="&quot;Los ingredientes de tu pizza son Mozzarella, Tomate y Peperoni&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="opc == 2">
+                                <then>
+                                    <output expression="&quot;Los ingredientes de tu pizza son Mozzarella, Tomate y Jam&#243;n&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="opc == 3">
+                                        <then>
+                                            <output expression="&quot;Los ingredientes de tu pizza son Mozzarella, Tomate y Salm&#243;n&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;No existe ese ingrediente&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
