@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="factorial"/>
+        <attribute name="authors" value="abdeel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 11:25:00 p. m."/>
+        <attribute name="created" value="YWJkZWVsO0RFRVBUSE9VR0hUOzIwMjUtMDQtMDY7MTI6NTk6MzkgYS4gbS47MjkwMw=="/>
+        <attribute name="edited" value="YWJkZWVsO0RFRVBUSE9VR0hUOzIwMjUtMDQtMDc7MTE6MjU6MDAgcC4gbS47MzszMDA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese el numero para su factorial:&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="i" expression="n"/>
+            <if expression="i==0">
+                <then>
+                    <output expression="&quot;1&quot;" newline="True"/>
+                </then>
+                <else>
+                    <while expression="i &gt;= 2">
+                        <assign variable="n" expression="n*(i-1)"/>
+                        <assign variable="i" expression="i-1"/>
+                    </while>
+                    <output expression="&quot;El factorial del numero que introdujo es: &quot;" newline="False"/>
+                    <output expression="n" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
